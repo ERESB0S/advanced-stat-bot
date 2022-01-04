@@ -14,7 +14,7 @@
 
 # İletişim
 * [Discord Sunucum](https://discord.gg/x8Uw4KTK5p)
-* [Discord Profilim](https://discord.com/users/239330400223232000)
+* [Discord Profilim](https://discord.com/users/907246062459318323)
 * Herhangi bir hata bulmanız durumunda ya da yardım isteyeceğiniz zaman buralardan bana ulaşabilirsiniz.
 
 ### NOT: Botta MIT lisansı bulunmaktadır. Bu botun dosyalarının benden habersiz paylaşılması/satılması durumunda gerekli işlemler yapılacaktır!
