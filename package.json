@@ -1,0 +1,19 @@
+{
+  "name": "stat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eresbos.js",
+  "scripts": {
+    "start": "node eresbos.js"
+  },
+  "author": "Eresbos",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "mongoose": "^5.11.14"
+  }
+}
