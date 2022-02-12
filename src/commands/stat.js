@@ -87,6 +87,7 @@ ${parents.length > 0 ? parents.map((e) => `\`•\` ${e.name}: \`${client.getTime
 `);
         eresbosEmbed.addField(`❯ Kanal Sıralaması: (Toplam ${kanalSayısı} Kanal)`, voiceTop);
         eresbosEmbed.addField("❯ Mesaj Bilgileri:", `\`•\` Toplam: \`${messageData ? messageData.topStat : 0}\` \n\`•\` 1 Gün: \`${messageData ? messageData.dailyStat : 0}\` \n\`•\` 1 Hafta: \`${messageData ? messageData.weeklyStat : 0}\` \n\`•\` 2 Hafta: \`${messageData ? messageData.twoWeeklyStat : 0}\``);
+        eresbosEmbed.addField("❯ Ses Bilgileri:", `\`•\` Toplam: \`${voiceData ? client.getTime(voiceData.topStat) : 0}\`\n\`•\` 1 Gün: \`${voiceData ? client.getTime(voiceData.dailyStat) : 0}\` \n\`•\` 1 Hafta: \`${voiceData ? client.getTime(voiceData.weeklyStat) : 0}\` \n\`•\` 2 Hafta: \`${voiceData ? client.getTime(voiceData.twoWeeklyStat) : 0}\``, true);
         eresbosEmbed.addField(`❯ Mesaj Sıralaması: (Toplam: ${messageData ? messageData.topStat : 0})`, messageTop);
         message.channel.send(eresbosEmbed).then(() => message.react(config.emojis.onay));
     }
