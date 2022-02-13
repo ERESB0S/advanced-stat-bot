@@ -25,7 +25,7 @@ client.commands = new Collection();
 client.aliases = new Collection();
 client.cooldown = new Map();
 client.ranks = [
-  { rankRole: "Yetki Rol ID", hammers: ["Hammer 1 ID", "Hammer 2 Id"], points: 1 }
+  { rankRole: "Yetki Rol ID", hammers: ["Hammer 1 ID", "Hammer 2 ID"], points: 1 }
 ];
 
 require("./src/handlers/commandHandler");
