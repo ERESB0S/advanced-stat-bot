@@ -82,7 +82,7 @@ module.exports = {
         eresbosEmbed.setThumbnail(kullanıcı.user.avatarURL({ dynamic: true }));
         eresbosEmbed.setDescription(`${kullanıcı.user.toString()} kullanıcısının genel sunucu ses ve mesaj istatistikleri;`);
         eresbosEmbed.addField("❯ Kategori Bilgileri:", `
-\`•\` Toplam: \`${client.getTime(voiceData ? voiceData.topStat : 0)}\`
+\`•\` Toplam: \`${voiceData ? client.getTime(voiceData.topStat) : 0}\`
 ${parents.length > 0 ? parents.map((e) => `\`•\` ${e.name}: \`${client.getTime(e.data)}\` `).join("\n") : ""}
 `);
         eresbosEmbed.addField(`❯ Kanal Sıralaması: (Toplam ${kanalSayısı} Kanal)`, voiceTop);
