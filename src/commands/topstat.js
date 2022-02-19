@@ -114,14 +114,17 @@ ${pointUsers.length > 0 ? pointUsers : "`Veri Bulunmuyor.`"}
             if (role) {
                 const voiceData = async (type) => {
                     let data = await voiceUser.find({ guildID: message.guild.id }).sort({ topStat: -1 });
-                    data = data.filter(e => message.guild.members.cache.has(e.userID) && message.guild.members.cache.get(e.userID).roles.cache.has(role.id));
-                    return data.length > 0 ? data.splice(0, 20).map((e, i) => `\`${i + 1}.\` <@${e.userID}> : \`${client.getTime(e[type])}\``).join("\n") : "`Veri bulunmuyor.`";
+                    data = data.filter((e) => e[type] !== 0 && message.guild.members.cache.has(e.userID) && message.guild.members.cache.get(e.userID).roles.cache.has(role.id));
+                    return data.length > 0 ? data.splice(0, 15).map((e, i) => `\`${i + 1}.\` <@${e.userID}> : \`${client.getTime(e[type])}\``).join("\n") : "`Veri bulunmuyor.`";
                 };
                 message.channel.send(eresbosEmbed.setDescription(`
 ${role.toString()} rolüne sahip üyelerin **toplam ses** istatistik verileri
 
 **❯ Toplam Ses Bilgileri:**
 ${await voiceData("topStat")}
+
+**❯ 2 Haftalık Mesaj Bilgileri:**
+${await voiceData("twoWeeklyStat")}
 
 **❯ Haftalık Ses Bilgileri:**
 ${await voiceData("weeklyStat")}
@@ -150,7 +153,7 @@ ${voiceChannels.length > 0 ? voiceChannels : "`Veri Bulunmuyor.`"}
                 const messageData = async (type) => {
                     let data = await messageUser.find({ guildID: message.guild.id }).sort({ topStat: -1 });
                     data = data.filter(e => message.guild.members.cache.has(e.userID) && message.guild.members.cache.get(e.userID).roles.cache.has(role.id));
-                    return data.length > 0 ? data.splice(0, 20).map((e, i) => `\`${i + 1}.\` <@${e.userID}> : \`${Number(e[type]).toLocaleString()} mesaj\``).join("\n") : "`Veri bulunmuyor.`";
+                    return data.length > 0 ? data.splice(0, 15).map((e, i) => `\`${i + 1}.\` <@${e.userID}> : \`${Number(e[type]).toLocaleString()} mesaj\``).join("\n") : "`Veri bulunmuyor.`";
                 };
                 message.channel.send(eresbosEmbed.setDescription(`
 ${role.toString()} rolüne sahip üyelerin **toplam mesaj** istatistik verileri
