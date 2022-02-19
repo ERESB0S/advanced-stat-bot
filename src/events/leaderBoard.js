@@ -14,12 +14,12 @@ module.exports = () => {
     const kanal = client.channels.cache.get(leaderBoard);
     const messageData = async (type) => {
         let data = await messageUser.find({ guildID: kanal.guild.id }).sort({ topStat: -1 });
-        data = data.filter(e => kanal.guild.members.cache.has(e.userID));
+        data = data.filter((e) => e[type] !== 0 && kanal.guild.members.cache.has(e.userID));
         return data.length > 0 ? data.splice(0, 20).map((e, i) => `\`${i + 1}.\` <@${e.userID}> : \`${Number(e[type]).toLocaleString()} mesaj\``).join("\n") : "`Veri bulunmuyor.`";
     };
     const voiceData = async (type) => {
         let data = await voiceUser.find({ guildID: kanal.guild.id }).sort({ topStat: -1 });
-        data = data.filter(e => kanal.guild.members.cache.has(e.userID));
+        data = data.filter((e) => e[type] !== 0 && kanal.guild.members.cache.has(e.userID));
         return data.length > 0 ? data.splice(0, 20).map((e, i) => `\`${i + 1}.\` <@${e.userID}> : \`${client.getTime(e[type])}\``).join("\n") : "`Veri bulunmuyor.`";
     };
     kanal.messages.fetch(topMessage).then(async (e) => {
