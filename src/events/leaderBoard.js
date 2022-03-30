@@ -12,6 +12,7 @@ moment.locale("tr");
 module.exports = () => {
     const eresbosEmbed = new MessageEmbed().setColor(0x55001b);
     const kanal = client.channels.cache.get(leaderBoard);
+    if (!kanal) return;
     const messageData = async (type) => {
         let data = await messageUser.find({ guildID: kanal.guild.id }).sort({ topStat: -1 });
         data = data.filter((e) => e[type] !== 0 && kanal.guild.members.cache.has(e.userID));
