@@ -8,6 +8,12 @@
   },
   "author": "Eresbos",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/ERESB0S/advanced-stat-bot"
+  },
+  "bugs": {
+    "url": "https://discord.gg/eresbos"
+  },
   "devDependencies": {
     "eslint": "^7.17.0",
     "prettier": "^2.3.0"
