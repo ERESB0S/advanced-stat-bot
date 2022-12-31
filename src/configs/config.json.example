@@ -1,0 +1,76 @@
+{
+  "botOwners": ["350976460313329665"], // Bot Sahiplerinin ID'leri
+  "prefix": ["!", ".", "e?"], // Bot Prefixleri
+  "guildID": "910121710706114600", // Botun aktif olacağı sunucu ID'si
+  "voiceChannel": "910123472599007252", // Botun gireceği ses kanal ID'si
+  "activity": "Eresbos ❤️", // Botun durumunda gözükecek yazı
+  "cmds_log": "910121710706114603", // Komut kullanımlarının gözükeceği log kanal ID'si
+  "sunucuAdi": "Bot Test", // Lider Tablosunda gözükecek Sunucu Adı
+  "leaderBoard": "915290872084590632", // Lider Tablosu "KANAL ID'si"
+  "topMessage": "915296154948870215", // Lider Tablosu "MESAJ İSTATİSTİK" mesajının ID'si
+  "topVoice": "915296199177822230", // Lider Tablosu "SES İSTATİSTİK" mesajının ID'si
+  "emojis": {
+    "onay": "✅", // Onay işlemlerindeki emoji
+    "red": "❌", // Red işlemlerindeki emoji
+    "fill": "<a:fill:964614486248013835>", // İçi dolu düz çizgi
+    "empty": "<:empty:964614693035606066>", // İçi boş düz çizgi
+    "emptyStart": "<:emptyStart:964614693039784017>", // Boş başlangıç çizgisi
+    "fillStart": "<a:fillStart:964614478429839390>", // Dolu başlangıç çizgisi
+    "emptyEnd": "<:emptyEnd:964614692888801300>", // Boş bitiş çizgisi
+    "fillEnd": "<a:fillEnd:964614486180892792>", // Dolu bitiş çizgisi
+  },
+  "badges": {
+    "vbronze": "910126457118933002", // "Ses Bronz" rozet rol ID'si
+    "vsilver": "910126469357907998", // "Ses Gümüş" rozet rol ID'si
+    "vgold": "910126475582251018", // "Ses Altın" rozet rol ID'si
+    "vdia": "910126482175701032", // "Ses Elmas" rozet rol ID'si
+    "vemerl": "910126488605564968", // "Ses Zümrüt" rozet rol ID'si
+    "cbronze": "914093559446134815", // "Mesaj Bronz" rozet rol ID'si
+    "csilver": "914093573723525200", // "Mesaj Gümüş" rozet rol ID'si
+    "cgold": "914093586688126976", // "Mesaj Altın" rozet rol ID'si
+    "cdia": "914093600890040331", // "Mesaj Elmas" rozet rol ID'si
+    "cemerl": "914093614760607804", // "Mesaj Zümrüt" rozet rol ID'si
+    "prizeLog": "910121710706114603" // Rozet kazanma log kanal ID'si
+  },
+  "targetAmount": {
+    "vbronze": "15h", // "Ses Bronz" rozeti hedefidir. Örn: 15h = 15 saat
+    "vsilver": "31h", // "Ses Gümüş" rozeti hedefidir. Örn: 31h = 31 saat
+    "vgold": "45h", // "Ses Altın" rozeti hedefidir. Örn: 45h = 45 saat
+    "vdia": "60h", // "Ses Elmas" rozeti hedefidir. Örn: 60h = 60 saat
+    "vemerl": "80h", // "Ses Zümrüt" rozeti hedefidir. Örn: 80h = 80 saat
+    "cbronze": "1000", // "Mesaj Bronz" rozeti hedefidir. Örn: 1000 = 1000 mesaj
+    "csilver": "1010", // "Mesaj Gümüş" rozeti hedefidir. Örn: 1010 = 1010 mesaj
+    "cgold": "1020", // "Mesaj Altın" rozeti hedefidir. Örn: 1020 = 1020 mesaj
+    "cdia": "1030", // "Mesaj Elmas" rozeti hedefidir. Örn: 1030 = 1030 mesaj
+    "cemerl": "1040" // "Mesaj Zümrüt" rozeti hedefidir. Örn: 1040 = 1040 mesaj
+  },
+  "points": {
+    "messageCount": 1, // Kaç mesaj başına puan eklenecek?
+    "messagePoint": 0.2, // Belirlenen mesaj hedefine gelince kaç puan eklenecek?
+    "voiceCount": 1, // Kaç dakika başına puan eklenecek?
+    "voicePoint": 0.2, // Belirlenen ses hedefine gelince kaç puan eklenecek?
+    "publicCount": 1, // Publicte kaç dakika başına puan eklenecek?
+    "publicPoint": 0.5 // Publicte belirlenen ses hedefine gelince kaç puan eklenecek?
+  },
+  "pointStaff": [], // İnsanlara puan ekleyip çıkaran ve puan sistemini aktif-deaktif edebilen kişilerdir
+  "rankLog": "910121710706114603", // Puanla rütbe atlama loglarının atılacağı kanal ID'si
+  "staffRoles": ["910124173442056253"], // Puanları sayılacak yetkili rol ID'leri
+  "otherRoles": {
+    "cmuted": [], // "Chat Muted" rol ID'leri (varsa yaz yoksa boş bırak)
+    "vmuted": [], // "Voice Muted" rol ID'leri (varsa yaz yoksa boş bırak)
+    "jailed": [], // "Jail" rol ID'leri (varsa yaz yoksa boş bırak)
+    "fTag": [], // "Yasaklı Tag" rol ID'leri (varsa yaz yoksa boş bırak)
+    "susp": [], // "Şüpheli" rol ID'leri (varsa yaz yoksa boş bırak)
+    "underWorld": [], // "UnderWorld" rol ID'leri (varsa yaz yoksa boş bırak)
+    "unreg": [] // "Kayıtsız" rol ID'leri (varsa yaz yoksa boş bırak)
+  },
+  "publicParents": ["910121710706114602"], // Public ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "registerParents": ["1025357995154083841"], // Register ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "crewParents": [], // Ekip ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "streamParents": [], // Stream ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "problemParents": [], // Sorun Çözme ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "gameParents": [], // Oyun ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "secretParents": [], // Secret ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "aloneParents": [], // Alone ses kanallarının kategori ID'leri (varsa yaz yoksa boş bırak)
+  "sleepRoom": "" // Sleep Room (AFK) kanal ID'si (varsa yaz yoksa boş bırak)
+}
