@@ -106,21 +106,21 @@ module.exports = {
           if (mesaj) mesaj.edit({ embeds: [eresbosEmbed.setFields(
             { name: "❯ Kategori Bilgileri:", value: `\`•\` Toplam: \`${voiceData ? client.getTime(voiceData.topStat) : "`Veri bulunamadı!`"}\` \n${parents.length > 0 ? parents.map((e) => `\`•\` ${e.name}: \`${client.getTime(e.data)}\``).join("\n") : ""}` },
             { name: `❯ Ses Sıralaması: (Toplam ${kanalSayısı} Kanal)`, value: voiceTop },
-            { name: `❯ Mesaj Sıralaması: (Toplam: ${messageData ? messageData.topStat : 0} Mesaj)`, value: messageTop },
+            { name: `❯ Mesaj Sıralaması: (Toplam: ${messageData ? Number(messageData.topStat).toLocaleString() : 0} Mesaj)`, value: messageTop },
           )] });          
         } else if (menu.values[0] === "topStat") {
           if (mesaj) mesaj.edit({ embeds: [eresbosEmbed.setFields(
-            { name: "❯ Mesaj Bilgileri:", value: `\`•\` Toplam: \`${messageData ? messageData.topStat : "`Veri bulunamadı!`"}\``, inline: true },
+            { name: "❯ Mesaj Bilgileri:", value: `\`•\` Toplam: \`${messageData ? Number(messageData.topStat).toLocaleString() : "`Veri bulunamadı!`"}\``, inline: true },
             { name: "❯ Ses Bilgileri:", value: `\`•\` Toplam: \`${voiceData ? client.getTime(voiceData.topStat) : "`Veri bulunamadı!`"}\``, inline: true },
           )] });
         } else if (menu.values[0] === "dailyStat") {
           if (mesaj) mesaj.edit({ embeds: [eresbosEmbed.setFields(
-            { name: "❯ Mesaj Bilgileri:", value: `\`•\` 1 Günlük: \`${messageData ? messageData.dailyStat : "`Veri bulunamadı!`"}\``, inline: true },
+            { name: "❯ Mesaj Bilgileri:", value: `\`•\` 1 Günlük: \`${messageData ? Number(messageData.dailyStat).toLocaleString() : "`Veri bulunamadı!`"}\``, inline: true },
             { name: "❯ Ses Bilgileri:", value: `\`•\` 1 Günlük: \`${voiceData ? client.getTime(voiceData.dailyStat) : "`Veri bulunamadı!`"}\``, inline: true },
           )] });
         } else if (menu.values[0] === "weeklyStat") {
           if (mesaj) mesaj.edit({ embeds: [eresbosEmbed.setFields(
-            { name: "❯ Mesaj Bilgileri:", value: `\`•\` 1 Haftalık: \`${messageData ? messageData.weeklyStat : "`Veri bulunamadı!`"}\``, inline: true },
+            { name: "❯ Mesaj Bilgileri:", value: `\`•\` 1 Haftalık: \`${messageData ? Number(messageData.weeklyStat).toLocaleString() : "`Veri bulunamadı!`"}\``, inline: true },
             { name: "❯ Ses Bilgileri:", value: `\`•\` 1 Haftalık: \`${voiceData ? client.getTime(voiceData.weeklyStat) : "`Veri bulunamadı!`"}\``, inline: true },
           )] });
         } else if (menu.values[0] === "statmenuclose") {

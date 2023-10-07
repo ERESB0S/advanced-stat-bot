@@ -1,9 +1,5 @@
 const client = global.client;
-const config = require("../configs/config.json");
-const { leaderBoard, sunucuAdi, topMessage, topVoice } = require("../configs/config.json");
-const messageUser = require("../schemas/messageUser");
-const voiceUser = require("../schemas/voiceUser");
-const { EmbedBuilder } = require("discord.js");
+const { leaderBoard, topMessage, topVoice } = require("../configs/config.json");
 const { CronJob } = require("cron");
 const moment = require("moment");
 require("moment-duration-format");
