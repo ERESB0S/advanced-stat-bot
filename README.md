@@ -28,19 +28,19 @@
 - [ ] **Görev Sistemi**
 
 # Görseller:
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1058515141592895579/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1058515394400354336/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1058516253993599006/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1058516502019588096/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1057327863197605989/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1057328165372055722/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1057328257789337660/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1057328407240785970/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/1058515708201406545/image.png">
-<img src="https://cdn.discordapp.com/attachments/910121710706114603/916334319323189278/5hfv7Kevk.png">
+<img src="./src/images/1.png" />
+<img src="./src/images/2.png" />
+<img src="./src/images/3.png" />
+<img src="./src/images/4.png" />
+<img src="./src/images/5.png" />
+<img src="./src/images/6.png" />
+<img src="./src/images/7.png" />
+<img src="./src/images/8.png" />
+<img src="./src/images/9.png" />
+<img src="./src/images/10.png" />
 
 # İletişim
-* [Web Sitem](https://eresbos.xyz)
+* [Web Sitem](https://eresbos.dev)
 * [Discord Sunucum](https://discord.gg/ZS2TKFFadZ)
 * [Discord Profilim](https://discord.com/users/350976460313329665)
 * Herhangi bir hata bulmanız durumunda ya da yardım isteyeceğiniz zaman buralardan bana ulaşabilirsiniz.
